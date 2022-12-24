@@ -1,0 +1,533 @@
+/* main elements */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body {
+    background-color: #000;
+    height: 100vh;
+}
+::selection {
+    background-color: #4F0000;
+    color: #F8CF2C;
+}
+/*header*/
+.navbar {
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    padding: 1px 5%;
+    z-index: 1;
+}
+.containar {
+    display: grid;
+    grid-template-columns: 6fr 2.5fr;
+}
+.Nav-Img {
+    width: 150px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+ul li {
+    padding-top: 35px;
+    padding-right: 50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+a:hover {
+    color: #4F0000;
+    box-shadow: 0 0 35px #4F0000 0 0 30px #4F0000;
+    transition: 0.5s;
+}
+/*home*/
+.Home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100vh;
+} 
+.h1-home {
+    color: #4F0000;
+    font-size: 50px;
+    padding-top: 180px;
+    padding-left: 150px;
+}
+.h5-home {
+    color: white;
+    font-size: 25px;
+    padding-left: 150px;
+}
+.p-home {
+    max-width: 300px;
+    padding-left: 150px;
+    color: white;
+    font-size: 15px;
+}
+.home-img1 {
+    max-width: 100%;
+    width: 400px;
+    margin: 100px;
+    margin-top: 50px;
+}
+.btn-1 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 130px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-1:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000;
+}
+/*sec-2*/
+.Planits {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 6rem;
+}
+.sun {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+}
+.t-1 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-1 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-2 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-2:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-3*/
+.mercury {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.mer {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 130px;
+}
+.t-2 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-2 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-3 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-3:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-4*/
+.Venus {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.Ven {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 160px;
+}
+.t-3 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-3 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.btn-4 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-4:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-5*/
+.earth {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.ear {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 160px;
+}
+.t-4 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-4 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.btn-5 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-5:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-6*/
+.Mars {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.Mar {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 160px;
+}
+.t-5 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-5 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.btn-6 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-6:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-7*/
+.Jupiter {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.Jup {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 160px;
+}
+.t-6 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-6 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-7 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-7:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-8*/
+.saturn {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.sat {
+    width: 500px;
+    height: 500px;
+    margin-top: 160px;
+}
+.t-7 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-7 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-8 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-8:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-9*/
+.uranus {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.ura {
+    width: 500px;
+    height: 500px;
+    margin-top: 40px;
+}
+.t-8 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-8 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-9 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-9:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*sec-10*/
+.neptune {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15rem;
+}
+.nep {
+    margin-left: 90px;
+    width: 350px;
+    height: 350px;
+    margin-top: 160px;
+}
+.t-9 {
+    color: #F8CF2C;
+    max-width: 250px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 250px;
+}
+.pre-9 {
+    font-size: 14px;
+    color: white;
+    margin-right: 50px;
+    font-weight: 500;
+}
+.btn-10 {
+    color: #4F0000;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid #4F0000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+.btn-10:hover {
+    box-shadow: 0 0 35px #4F0000,
+    0 0 30px #4F0000 ;
+}
+/*footer*/
+.sec-1 {
+    background: ;
+    margin-top: 10rem;
+}
+.sec-1 h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #F8CF2C;
+}
+.sec-1 p {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+    position: relative;
+    bottom: 7px;
+    color: #4F0000;
+}
+.sec-1 hr {
+    border: #4F0000 1px solid;
+}
+.span-two {
+   color: #F8CF2C; 
+}
